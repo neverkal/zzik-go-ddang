@@ -1,0 +1,43 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dip"
+    android:padding="10dp"
+    android:orientation="horizontal"
+    android:background="#FFFFFF">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF">
+        <ImageView
+            android:id="@+id/m_photo"
+            android:layout_width="90dip"
+            android:layout_height="90dip"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/m_name"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="70dp"
+            android:layout_width="180dip"
+            android:layout_height="40dip"
+            android:layout_toRightOf="@+id/m_photo"
+            android:textStyle="bold"
+            android:text="메뉴 이름"
+            android:textColor="@color/darkblue"
+            android:textSize="65px"/>
+
+        <TextView
+            android:id="@+id/m_price"
+            android:layout_width="180dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="70dp"
+            android:layout_toRightOf="@+id/m_photo"
+            android:layout_below="@+id/m_name"
+            android:text="메뉴 가격"
+            android:textStyle="bold"
+            android:textSize="50px"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

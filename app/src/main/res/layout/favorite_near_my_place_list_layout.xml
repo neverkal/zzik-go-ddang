@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:id="@+id/fav_near_store_name"
+        android:textSize="40px"/>
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="33dp"
+        android:text="삭제"
+        android:id="@+id/delnearfavbutton" />
+        </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="TextView"
+        android:id="@+id/fav_near_store_addr"
+        android:textSize="20px"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="단골고객수:"
+        android:paddingTop="3dp"
+        android:id="@+id/fav_near_CustomerCount"
+        android:textSize="20px"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:id="@+id/fav_near_count"
+        android:textSize="20px"/>
+
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>

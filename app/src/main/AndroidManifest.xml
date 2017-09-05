@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.moonsoon.cbasdga" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="com.example.moonsoon.cbasdga.locationapi.maps.permission.MAPS_RECEIVE" />
+
+    <permission
+        android:name="com.example.moonsoon.cbasdga.locationapi.maps.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-feature android:name="android.hardware.nfc"
+        android:required="false"/>
+    <uses-permission android:name="android.permission.NFC"/>
+
+    <!-- GCM 권한 -->
+    <permission android:name="com.example.moonsoon.cbasdga.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.example.moonsoon.cbasdga.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- GPS 권한(gps,기지국)-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/MyTheme"
+        android:largeHeap="true">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.example.moonsoon.cbasdga.MainActivity"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".store.StoreActivity"
+            android:label="Category"
+            android:parentActivityName="com.example.moonsoon.cbasdga.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.moonsoon.cbasdga.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".store.StoreDetailActivity"
+            android:label="가게정보"
+            android:parentActivityName=".store.StoreActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.moonsoon.cbasdga.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".favorite.FavoriteActivity"
+            android:label="즐겨찾기"
+            android:parentActivityName="com.example.moonsoon.cbasdga.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.moonsoon.cbasdga.MainActivity"/>
+        </activity>
+
+        <activity
+            android:name=".readNFC"
+            android:label="@layout/menu_list">
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/high.co.kr.project" />
+            </intent-filter>
+        </activity>
+
+        <!-- GCM 처리 서비스 -->
+        <service android:name=".gcm.GCMIntentService" />
+
+        <!-- GCM 관련 브로드캐스트 메시지를 받을 수신자 -->
+        <receiver android:name="com.example.moonsoon.cbasdga.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <!-- 메시지 수신 메시지 지정 -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.example.moonsoon.cbasdga" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".menu.MenuInfoActivity" android:label="메뉴정보"></activity>
+        <activity android:name=".order.CartActivity" android:label="장바구니"></activity>
+        <activity android:name=".order.OrderDetailActivity" android:label="주문내역"></activity>
+        <activity android:name=".order.BuyInfoActivity" android:label="결제정보"></activity>
+        <activity android:name=".order.MyOrderActivity" android:label="주문정보" android:launchMode="singleTask"></activity>
+        <activity android:name=".MenuListActivity" android:label="메뉴"></activity>
+        <activity android:name=".order.AddFavorite" android:label="즐겨찾기추가"></activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAt_6RdhiJ0Xzwh4hjlFG6exffK6l_ijIY" />
+
+    </application>
+
+</manifest>

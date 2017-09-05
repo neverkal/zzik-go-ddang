@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="high.co.kr.project.CartActivity"
+    android:background="#FFFFFF">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:weightSum="0.4"
+        android:background="@drawable/layout_border">
+
+        <ListView
+            android:id="@+id/lv_orderinfo"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.59"
+            android:choiceMode="singleChoice" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/layout_border">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="0.12"
+            android:background="#FFFFFF">
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.04"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="주문 시간"
+                android:textSize="14pt"
+                android:textColor="#2C3E50"/>
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.06"/>
+            <TextView
+                android:id="@+id/o_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="2015-09-23"
+                android:textSize="16pt"
+                android:textColor="#2C3E50"/>
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.04"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="0.12"
+            android:background="#FFFFFF">
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.04"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="결제 방법"
+                android:textSize="14pt"
+                android:textColor="#2C3E50"/>
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.06"/>
+            <TextView
+                android:id="@+id/o_Payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="인터넷 결제"
+                android:textSize="16pt"
+                android:textColor="#2C3E50"/>
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.04"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="0.12"
+            android:background="#FFFFFF">
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.04"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="총 주문 가격 "
+                android:textSize="14pt"
+                android:textColor="#2C3E50"/>
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.02"/>
+            <TextView
+                android:id="@+id/c_SumPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="000,000"
+                android:textSize="16pt"
+                android:textColor="#2C3E50"/>
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.04"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="#FFFFFF"
+        android:weightSum="0.27">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:text="주문 요청 사항"
+            android:textSize="14pt"
+            android:textColor="#2C3E50"/>
+        <TextView
+            android:id="@+id/oinfo_req"
+            android:layout_width="300dip"
+            android:layout_height="wrap_content"
+            android:textSize="9pt"
+            android:text="볶음밥에 짜장 소스 넉넉하게 주세요!"
+            android:textColor="#2C3E50"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:weightSum="0.12">
+
+        <Button
+            android:id="@+id/c_order"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:textColor="#FF8040"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_gravity="center"
+            android:text="주문하기" />
+
+        <Button
+            android:id="@+id/c_addmenu"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:text="매장 보기"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+</LinearLayout>

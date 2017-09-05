@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="270dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="1"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:weightSum="0.28">
+
+        <TextView
+            android:id="@+id/cStore_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="매장이름"
+            android:textSize="20pt"
+            android:textColor="#2C3E50"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:weightSum="0.18">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="메뉴"
+            android:textSize="14pt"
+            android:textColor="#2C3E50"/>
+
+        <TextView
+            android:id="@+id/cMenu_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="양념치킨"
+            android:textSize="14pt"
+            android:textColor="#2C3E50"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:weightSum="0.18">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="가격"
+            android:textSize="14pt"
+            android:textColor="#2C3E50"/>
+
+        <TextView
+            android:id="@+id/cMenu_price"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="000,000"
+            android:textSize="14pt"
+            android:textColor="#2C3E50"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:weightSum="0.18">
+
+        <TextView
+            android:id="@+id/cMenu_amount"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="수량"
+            android:textSize="14pt"
+            android:textColor="#2C3E50"/>
+
+        <TextView
+            android:id="@+id/c_amount"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="3"
+            android:textSize="14pt"
+            android:textColor="#2C3E50"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:weightSum="0.18">
+        <Button
+            android:id="@+id/c_ordermenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:text="결제" />
+
+        <Button
+            android:id="@+id/c_delmenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:textColor="#FF8040"
+            android:layout_toRightOf="@+id/c_ordermenu"
+            android:layout_marginLeft="20dp"
+             android:text="삭제" />
+
+
+    </LinearLayout>
+</LinearLayout>

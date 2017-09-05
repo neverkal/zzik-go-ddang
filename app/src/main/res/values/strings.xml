@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">찍고땡</string>
+
+    <string name="title_section1">카페</string>
+    <string name="title_section2">패스트푸드</string>
+    <string name="title_section3">고기</string>
+    <string name="title_section4">피자</string>
+    <string name="title_section5">파스타</string>
+    <string name="title_section6">치킨</string>
+    <string name="title_section7">한식</string>
+    <string name="title_section8">중식</string>
+    <string name="title_section9">일식</string>
+
+
+    <string name="favorite_section1">즐겨찾기</string>
+    <string name="favorite_section2">주문내역</string>
+    <string name="favorite_section3">지도보기</string>
+
+    <string name="action_cart">장바구니</string>
+    <string name="action_favorite">즐겨찾기</string>
+    <string name="action_map">내 주변 지역</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

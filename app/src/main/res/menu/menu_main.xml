@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" yourapp:showAsAction="never" />
+
+    <item android:id="@+id/action_map"
+        android:icon="@drawable/map_img"
+        android:title="@string/action_cart"
+        yourapp:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/action_myorder"
+        android:icon="@drawable/order_state_img"
+        android:title="@string/action_cart"
+        yourapp:showAsAction="ifRoom"/>
+</menu>

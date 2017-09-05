@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="high.co.kr.project.BuyInfoActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:orientation="vertical"
+        android:layout_weight="0.40"
+        >
+
+        <ListView
+            android:id="@+id/lv_buy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:choiceMode="singleChoice" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:orientation="horizontal"
+        android:layout_weight="0.20"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:layout_gravity="center_vertical"
+            android:textColor="#2C3E50"
+            android:text="Sum"
+            android:textSize="18pt"/>
+
+        <TextView
+            android:id="@+id/buy_sumprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="100dip"
+            android:textColor="#2C3E50"
+            android:text="000000"
+            android:textSize="18pt"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="25dip"
+        android:weightSum="0.25"
+        android:orientation="vertical"
+        android:layout_weight="0.4"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dip"
+                android:textColor="#2C3E50"
+                android:text="결제방법"
+                android:textSize="13pt"/>
+            <LinearLayout
+                android:layout_width="100dip"
+                android:layout_height="fill_parent"/>
+            <Spinner
+                android:id="@+id/buy_spin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+
+            </Spinner>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/buy_req"
+            android:layout_width="fill_parent"
+            android:layout_height="80dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_gravity="center"
+            android:textColor="#2C3E50"
+            android:hint="Requirement"/>
+
+        <Button
+            android:id="@+id/buy_button"
+            android:layout_width="300dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:textColor="#FF8040"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="35dp"
+            android:text="결제"/>
+
+    </LinearLayout>
+
+</LinearLayout>

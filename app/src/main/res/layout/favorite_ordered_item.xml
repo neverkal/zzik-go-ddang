@@ -1,0 +1,91 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dip"
+    android:padding="10dp"
+    android:orientation="horizontal"
+    android:background="#FFFFFF">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+        <TextView
+            android:id="@+id/o_s_name"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:textStyle="bold"
+            android:text="StoreName"
+            android:textSize="25dip"
+            android:background="#FFFFFF"
+            android:textColor="#2C3E50"/>
+        <TextView
+            android:id="@+id/o_s_tel_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_below="@+id/o_s_name"
+            android:textSize="15dip"
+            android:text="Tel : "
+            android:background="#FFFFFF"
+            android:textColor="#2C3E50"/>
+        <TextView
+            android:id="@+id/o_s_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/o_s_tel_t"
+            android:layout_below="@+id/o_s_name"
+            android:text="02-000-0000"
+            android:textSize="13dip"
+            android:background="#FFFFFF"
+            android:textColor="#2C3E50"/>
+        <TextView
+            android:id="@+id/o_s_addr_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="13dip"
+            android:text="Addr : "
+            android:layout_marginLeft="160dp"
+            android:background="#FFFFFF"
+            android:textColor="#2C3E50"
+            />
+        <TextView
+            android:id="@+id/o_s_addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dip"
+            android:layout_toRightOf="@+id/o_s_addr_t"
+            android:text="서울시 정릉동 서경대학교 북악관 602호"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:background="#FFFFFF"
+            android:textColor="#2C3E50"/>
+        <TextView
+            android:id="@+id/o_s_date_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="13dip"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="20dp"
+            android:text="최근 방문 시간 : "
+            android:layout_below="@+id/o_s_addr_t"
+            android:background="#FFFFFF"
+            android:textColor="#2C3E50"
+            />
+        <TextView
+            android:id="@+id/o_s_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dip"
+            android:layout_toRightOf="@+id/o_s_date_t"
+            android:layout_marginTop="35dp"
+            android:text="2015년 09월 23일 9시 30분"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:background="#FFFFFF"
+            android:textColor="#2C3E50"/>
+
+    </RelativeLayout>
+</LinearLayout>
